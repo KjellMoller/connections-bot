@@ -7,7 +7,7 @@ import csv
 # Make sure chromedriver is downloaded, and wherever it is stored to your export path
 driver = webdriver.Chrome()
 archive_puzzle_number = 1
-csv_file_path = "extracted_data.csv"
+csv_file_path = "connections_data.csv"
 
 # Function to write data into csv file
 def write_to_csv(id, data, file_path, write_headers=False):
