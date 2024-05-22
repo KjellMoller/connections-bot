@@ -1,3 +1,8 @@
+""" 
+Python script to collect connections archive data
+Kjell Moller, 2024
+"""
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import json
@@ -7,9 +12,14 @@ import csv
 # Make sure chromedriver is downloaded, and wherever it is stored to your export path
 driver = webdriver.Chrome()
 archive_puzzle_number = 1
-csv_file_path = "connections_data.csv"
+csv_file_path = "data-collection/connections_data.csv"
 
-# Function to write data into csv file
+""" 
+    Function to get write to csv.   
+    @param id, data: description of connections data.
+           file_path: path to write data to
+    @return Return the average embedding for the set of words
+"""
 def write_to_csv(id, data, file_path, write_headers=False):
     with open(file_path, "a", newline='', encoding="utf-8") as csvfile:
         csvwriter = csv.writer(csvfile)

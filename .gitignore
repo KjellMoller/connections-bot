@@ -164,8 +164,7 @@ cython_debug/
 # Large data model files
 glove.42B.300d.txt
 glove.42B.300d.w2v.txt
-X_training.npy
-X_validation.npy
-Y_training.csv
-Y_validation.csv
+clusters.npy
+embeddings.npy
+clustered_data.csv
 connections_data.csv
